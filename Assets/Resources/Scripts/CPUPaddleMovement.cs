@@ -10,9 +10,9 @@ public class CPUPaddleMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Mathf.Abs(transform.position.y - base.transform.position.y) > 50)
+        if (Mathf.Abs(transform.position.y - Ball.transform.position.y) > 1)
         {
-            if (transform.position.y < base.transform.position.y)
+            if (transform.position.y < Ball.transform.position.y)
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(0, 1) * PaddleSpeed;
             }

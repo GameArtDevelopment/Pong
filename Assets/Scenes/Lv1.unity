@@ -221,7 +221,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 8.30243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -232,7 +232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 17.60486}
   m_EdgeRadius: 0
 --- !u!212 &294088426
 SpriteRenderer:
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52878af135cce4347b875444467f6646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PaddleSpeed: 10
+  PaddleSpeed: 15
   Ball: {fileID: 2099709523}
 --- !u!1 &619394800
 GameObject:
@@ -879,8 +879,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278230271
-  m_fontColor: {r: 1, g: 0.60990757, b: 0, a: 1}
+    rgba: 4278230015
+  m_fontColor: {r: 1, g: 0.60784316, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1446,7 +1446,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -6.4386196}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1457,7 +1457,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 13.877239}
   m_EdgeRadius: 0
 --- !u!212 &1600775526
 SpriteRenderer:
@@ -1624,7 +1624,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: a7309820c0c984de19498bf78c20bf2b, type: 3}
-  m_Color: {r: 0.76470596, g: 0.48627454, b: 0.043137256, a: 1}
+  m_Color: {r: 1, g: 0.61413044, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1994,10 +1994,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3643322523129054103, guid: 8ee20d74a5fc7428e9d23a1e3506a962, type: 3}
-      propertyPath: GameManager
-      value: 
-      objectReference: {fileID: 2076330591}
     - target: {fileID: 3643322523129054103, guid: 8ee20d74a5fc7428e9d23a1e3506a962, type: 3}
       propertyPath: ScoreController
       value: 

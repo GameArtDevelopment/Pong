@@ -8,16 +8,32 @@ public class Ball : MonoBehaviour
 
     private int _hitCounter = 0;
 
+    
+
     private void Start()
     {
         StartCoroutine(BallStart());
     }
-
-    public IEnumerator BallStart (bool Player1IsStarting = true)
+    private void BallPosition(bool player1IsStarting)
     {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+
+        if (player1IsStarting)
+        {
+            gameObject.transform.localPosition = new Vector3(-1, 0, 0);
+        }
+        else
+        {
+            gameObject.transform.localPosition = new Vector3(1, 0, 0);
+        }
+    }
+
+    public IEnumerator BallStart (bool player1IsStarting = true)
+    {
+        BallPosition(player1IsStarting);
         _hitCounter = 0;
         yield return new WaitForSeconds(2);
-        if (Player1IsStarting)
+        if (player1IsStarting)
         {
             BallMove(new Vector2(-1, 0));
         }
@@ -45,4 +61,6 @@ public class Ball : MonoBehaviour
             _hitCounter++;
         }
     }
+
+    
 }

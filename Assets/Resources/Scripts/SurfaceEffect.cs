@@ -11,6 +11,8 @@ public class SurfaceEffect : MonoBehaviour
     public float StickyEffect;
     public Ball BallMovement;
 
+    
+
     //public GameManager GameManager;
     public ScoreController ScoreController;
 
@@ -48,6 +50,7 @@ public class SurfaceEffect : MonoBehaviour
         {
             //GameManager.Player2Score();
             ScoreController.Player2Score();
+            StartCoroutine(BallMovement.BallStart(true));
             //Score();
         }
 
@@ -55,9 +58,12 @@ public class SurfaceEffect : MonoBehaviour
         {
             //GameManager.Player1Score();
             ScoreController.Player1Score();
+            StartCoroutine(BallMovement.BallStart(false));
             //Score();
         }
-        
+
+
     }
 
+    
 }
