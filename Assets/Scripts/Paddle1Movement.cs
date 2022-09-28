@@ -18,4 +18,6 @@ public class Paddle1Movement : MonoBehaviour
 
         _paddleRB.velocity = new Vector2(0, _vertical) * _paddleSpeed;
     }
+
+
 }

@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class SurfaceEffect : MonoBehaviour
 {
+    public static event Action Score = delegate { };
+
     public float BounceEffect;
     public float StickyEffect;
     public Ball BallMovement;
 
-    
+    //public GameManager GameManager;
+    public ScoreController ScoreController;
 
     private void PaddleBounce(Collision2D col)
     {
@@ -37,16 +41,21 @@ public class SurfaceEffect : MonoBehaviour
         if (collision.gameObject.name == "Paddle1" || collision.gameObject.name == "Paddle2")
         {
             PaddleBounce(collision);
+            
         }
 
         else if (collision.gameObject.name == "EastWall")
         {
-
+            //GameManager.Player2Score();
+            ScoreController.Player2Score();
+            //Score();
         }
 
         else if (collision.gameObject.name == "WestWall")
         {
-
+            //GameManager.Player1Score();
+            ScoreController.Player1Score();
+            //Score();
         }
         
     }
